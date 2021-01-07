@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ariel.healthbit">
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    android:autoLink="phone"
+
+    <application
+        android:name=".FireApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:layoutDirection="ltr"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HealthBit">
+        <activity
+            android:name=".activityOrders">
+        <intent-filter>
+            <action android:name="android.intent.action.DIAL" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        </activity>
+<!--        <activity-->
+<!--            android:name=".activityOrders"-->
+<!--            android:label="@string/title_activity_orders"-->
+<!--            android:theme="@style/Theme.HealthBit.NoActionBar"></activity>-->
+        <activity
+            android:name=".adminMenu1"
+            android:label="@string/title_activity_admin_menu1"
+            android:theme="@style/Theme.HealthBit.NoActionBar" />
+        <activity android:name=".cart_activity"></activity>
+        <activity android:name=".settingprofile" />
+        <activity android:name=".newProducts" />
+        <activity android:name=".updateprofile" />
+        <activity android:name=".weighttracker" />
+        <activity android:name=".my_purchases" />
+        <activity android:name=".forgotpassword" />
+        <activity android:name=".updateProducts" />
+        <activity android:name=".signup_next" />
+        <activity android:name=".daily_activity" />
+        <activity android:name=".dailymenu" />
+
+        <activity android:name=".list_menu_activity" />
+        <activity android:name=".list_menu_2Activity" />
+        <activity android:name=".tips" />
+        <activity android:name=".bmi_activity" />
+        <activity android:name=".store" />
+        <activity android:name=".myprofile" />
+        <activity android:name=".MainProfile" />
+        <activity android:name=".signup" />
+        <activity android:name=".signin" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

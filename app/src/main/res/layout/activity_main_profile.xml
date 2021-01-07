@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:background="@drawable/main"
+    tools:context="com.ariel.healthbit.MainProfile">
+
+    <Button
+        android:id="@+id/btn_myPurchases"
+        android:layout_width="252dp"
+        android:layout_height="90dp"
+        android:background="@drawable/roundbtn"
+        android:drawableLeft="@drawable/ic_activity"
+        android:text="My Purchases"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#B9FFB7CF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.588" />
+
+    <Button
+        android:id="@+id/main_store"
+        android:layout_width="149dp"
+        android:layout_height="66dp"
+        android:background="@drawable/roundbtn"
+        android:drawableLeft="@drawable/ic_store"
+        android:text="store"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#B9FFB7CF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.887" />
+
+    <Button
+        android:id="@+id/main_dailyMenu"
+        android:layout_width="146dp"
+        android:layout_height="71dp"
+        android:background="@drawable/roundbtn"
+        android:drawableLeft="@drawable/ic_menu"
+        android:text="daily menu"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#B9FFB7CF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.893" />
+
+    <Button
+        android:id="@+id/main_tips"
+        android:layout_width="273dp"
+        android:layout_height="85dp"
+        android:background="@drawable/roundbtn"
+        android:drawableLeft="@drawable/ic_tips"
+        android:text="tips"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#B9FFB7CF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.744" />
+
+    <Button
+        android:id="@+id/main_myprofile"
+        android:layout_width="92dp"
+        android:layout_height="66dp"
+        android:drawableLeft="@drawable/ic_baseline_account_circle_24"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:backgroundTint="#DFCCCC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.084" />
+
+    <Button
+        android:id="@+id/main_setting"
+        android:layout_width="66dp"
+        android:layout_height="52dp"
+        android:drawableTop="@drawable/ic_baseline_settings_24"
+        android:text="setting"
+        android:textColor="#CCC8C8"
+        android:textSize="8sp"
+        app:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/mainprofile_logout"
+        android:layout_width="111dp"
+        android:layout_height="56dp"
+        android:text="@string/log_out"
+        android:textStyle="normal|bold|italic"
+        app:backgroundTint="#B9FFB7CF"
+        app:iconPadding="18dp"
+        app:iconTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.997"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarMainProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar"
+        android:layoutDirection="ltr"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:subtitleTextColor="@color/white"
+        app:titleTextColor="@color/white" />
+
+    <TextView
+        android:id="@+id/mainprofile_hello"
+        android:layout_width="192dp"
+        android:layout_height="45dp"
+        android:text="Hello"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.099" />
+
+    <Button
+        android:id="@+id/updateItem"
+        android:layout_width="287dp"
+        android:layout_height="114dp"
+        android:background="@drawable/roundbtn"
+        android:drawableLeft="@drawable/ic_weighttracker"
+        android:text="weight tracker"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#B9FFB7CF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.217" />
+
+    <Button
+        android:id="@+id/newItem"
+        android:layout_width="252dp"
+        android:layout_height="90dp"
+        android:background="@drawable/roundbtn"
+        android:drawableLeft="@drawable/ic_baseline_calculate_24"
+        android:text="BMI calc"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#B9FFB7CF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.41" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
